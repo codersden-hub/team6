@@ -184,7 +184,7 @@ ul li a {
 
 .profile-text {
   margin: 10px;
-  text-align: center;
+  text-align: right;
 }
 
 .profile-text button {
@@ -386,5 +386,11 @@ ul li a {
 
   .handle-div > div div:nth-child(n) img {
     width: 21px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .profile-text {
+    text-align: center;
   }
 }
