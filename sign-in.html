@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/LOGO.png">
+    <link rel="stylesheet" href="./css/si.css">
+    <title>Sign In </title>
+</head>
+<body>
+    <header class="si-header">
+        <div class="si-logo-ctrl">
+            <img class="si-logo" src="./assets/quilog.svg" alt="">
+        </div>
+        <h2 class="si-logo-name">CodersDen</h2>
+    </header>
+    <main class="si-main">
+        <div class="si-form">
+            <h1 class="si-t"> Welcome </h1>
+            <p class="si-desc"> Login to your account </p>
+            <div class="si-input">
+                <input id="email" type="email" placeholder="Enter email">
+                <input id="password" type="password" placeholder="Enter password">
+                <a class="si-fp" href="">forgot password?</a>
+            </div>
+            <div class="si-ca-ctrl">
+                <button id="si-si" class="si-ca">Sign in</button>
+                <button id="si-gh" class=" si-ca si-gh">sign in with github</button>
+            </div>
+            <p class="su"> Don't have account? <a class="su-link" href="sign-up.html">Sign up</a></p>
+        </div>
+        <div class="si-bi">
+            <h1 class="si-bi-tt"> Let's Blog it</h1>
+            <div class="si-bi-ctrl">
+                <img class="si-bi-img" src="./assets/blog-it.svg" alt="">
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="./js/si.js"></script>
+</body>
+</html>
