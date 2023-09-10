@@ -10,8 +10,8 @@ to discuss what you would like to change.
 Please make sure to update tests as appropriate.
 
 ## Our awesome team
-Jonnie
-Akorede Mohammed
-Omegbu Edwin
-Geekcoder
-Fortzy
+* Jonnie
+* Akorede Mohammed
+* Omegbu Edwin
+* Geekcoder
+* Fortzy
