@@ -47,6 +47,7 @@ ul li a {
 
 .left-nav-div, .right-nav-div {
     align-items: center;
+    
 }
 
 .left-nav-div img {
@@ -73,6 +74,7 @@ ul li a {
     font-size: 24px;
     line-height: 26px;
     color: rgba(0, 0, 0, 1);
+
 }
 
 .right-nav-div img {
@@ -83,7 +85,15 @@ ul li a {
     width: 49px;
     aspect-ratio: 1;
 }
-
+.right-nav-div p {
+    width: 100%;
+    aspect-ratio: 1;
+    /* font-size: 3rem; */
+    border-radius: 50%;
+    color: #fff;
+    background-color: purple;
+    
+}
 .main-section {
     width: 50%;
     margin: auto;

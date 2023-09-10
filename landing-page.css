@@ -63,7 +63,14 @@ nav {
 .btn-login {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+.btn-login, .btn-signup{
+  left: 0;
+  transform: scale(100%);
 
+  &:hover{
+    transform: scale(98%);
+  }
+}
 .btn-read,
 .btn-create {
   display: flex;
@@ -73,13 +80,17 @@ nav {
   border-radius: 32px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: scale(100%);
+
+  &:hover{
+    transform: scale(98%);
+  }
 
   & > svg {
     width: 48px;
     height: 48px;
   }
 }
-
 .hamburger-btn {
   padding: 0.125rem 0.5rem;
   border: none;
@@ -116,6 +127,14 @@ main {
     align-items: center;
     margin-top: -6rem;
   }
+}
+
+a {
+ &:hover{
+  border-radius: inherit;
+  border-radius: 32px;
+ }
+
 }
 
 .hero-image {
