@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+
+:root{
+    --text-color: #000;
+    ---body-coor: #fff;
+    --border-color:  #515151;
+    --oh--color:#75C2F6;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    background-image: url('../assets/background.svg');
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+}
+
+.su-bg-ctrl{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.su-bg-img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 3;
+}
+.su-header{
+    padding: 0rem 0 0 3rem;
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+}
+.su-logo-ctrl{
+    width: 2rem;
+    aspect-ratio: 1;
+}
+.su-logo{
+    width: 100%;
+    height: 100%;
+}
+.su-logo-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:500 ;
+}
+
+.su-main{
+    padding-bottom: 5rem;
+    margin-top: -2rem;
+    width: 75%; 
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 4rem;
+    place-self: center;
+    
+}
+.su-form{
+    padding: 3rem 2rem 2rem 2rem;
+    width: 100%;
+    height: fit-content;
+    background-color: var(---body-coor);
+    display: grid;
+    grid-template-columns: 1fr;
+    /* place-items: center; */
+}
+.su-t{
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.su-desc{
+    margin-bottom: 2rem ;
+    font-size: .7rem;
+}
+
+.su-input{
+    margin-bottom: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    height: fit-content;
+}
+input{
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+}
+input:hover{
+    border-bottom: 1px solid var(--oh--color);
+}
+/* input:focus{
+border-bottom: 1px solid;
+} */
+.su-ca-ctrl, .su-google-ctrl{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.info-modal{
+    font-size: .7rem;
+    font-weight: 600;
+    color: red;
+    visibility: hidden;
+    display: flex;
+    gap: .2rem;
+
+}
+button{
+    width: 100%;
+    height: 2rem;
+    background-color: var(---body-coor);
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: .3rem;
+    font-size: .9rem;
+}
+button:hover{
+    border: 1px solid var(--oh--color);
+    cursor: pointer;
+}
+.su-google-ctrl{
+    margin-bottom: 1rem;
+}
+.su-google{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.si{
+    font-size: .7rem;
+    text-align: center;
+}
+.si-link{
+    font-weight: 500;
+    text-decoration: none;
+}
+.su-bi{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+.su-bi-tt{
+    font-weight: 500;
+}
+.su-bi-ctrl{
+    width: 75%;
+}
+.su-bi-img{
+    width: 100%;
+}
+
+@media screen and (max-width:1099px) {
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:950px) {
+    html{
+        font-size: 10px;
+    }
+    body{
+        height: fit-content;
+    }
+    .su-main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .su-form{
+        width: 75%;
+        margin-top: -15%;
+    }
+    .su-ca-ctrl, .su-google-ctrl{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        width: 40%;
+    }
+    .su-bi-tt{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:490px) {
+    html{
+        font-size: 10px;
+    }
+    body{
+        height: 100vh;
+    }
+    .su-header{
+        margin: unset;
+    }
+    .su-main{
+        margin-top: -50rem;
+        width: 90%;
+        
+    }
+    .su-form{
+        margin-top: unset;
+    }
+    .su-bi-tt{
+        font-size: 2rem;
+    }
+    .su-input{
+        margin-bottom: 9rem;
+    }
+    .su-bi-ctrl{
+        display: none;
+    }
+    .su-bi-tt{
+        font-size:3rem;
+    }
+    button{
+        height: 4rem;
+        font-size: 1.5rem;
+    }
+    button{
+        width: 100%;
+    }
+}
+@media screen and (max-height:750px) {
+    .su-main{
+        margin-top: unset;
+    }
+}
